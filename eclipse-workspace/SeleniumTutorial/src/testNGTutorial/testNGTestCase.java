@@ -30,8 +30,8 @@ public class testNGTestCase {
 	public void beforeMethod() {
 		System.out.println("This is beforeMethod Method ");
 	}
-
-	@Test
+		
+	@Test 
 	public void f() {
 		System.out.println("This is Test Method ");
 	}

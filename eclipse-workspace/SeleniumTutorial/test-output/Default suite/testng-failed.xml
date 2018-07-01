@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGTutorial.TestNGClass">
+      <class name="testNGTutorial.DataProviderDemo">
         <methods>
-          <include name="MouseHoverAdmin"/>
-          <include name="MouseHoverPIM"/>
-          <include name="CloseApp"/>
-          <include name="LoginApp"/>
+          <include name="OpenApplication"/>
+          <include name="login" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- testNGTutorial.TestNGClass -->
+      </class> <!-- testNGTutorial.DataProviderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

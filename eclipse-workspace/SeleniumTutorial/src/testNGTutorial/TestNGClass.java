@@ -22,15 +22,21 @@ public class TestNGClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 		driver.get("http:\\opensource.demo.orangehrmlive.com");
+		
+		
+	}
+	@Test (groups = {"login"})
+	public void login () {
 		POMLogin.username(driver);
 		POMLogin.password(driver);
 		POMLogin.loginButton(driver);
-		
 	}
-	@Test
+	
+	@Test (groups = {"MouseHover"})
 	public void MouseHoverPIM() {
 		POMEmployeeRegistration.PIM(driver);
-		POMEmployeeRegistration.EmployeeList(driver);}
+		POMEmployeeRegistration.EmployeeList(driver);
+		}
 	
 	@Test  (dependsOnMethods = {"MouseHoverPIM"})
 		public void MouseHoverAdmin() {
